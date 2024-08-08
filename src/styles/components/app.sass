@@ -1,0 +1,26 @@
+@use '../variables'
+
+#portfolio
+    display: flex
+    flex-wrap: wrap
+    padding: 5rem 3rem 5rem 3rem
+    gap: 3rem
+    background-image: variables.$animated-gradient
+    background-size: 500% 100%
+    animation: animated-gradient 5s infinite alternate
+
+    @keyframes animated-gradient
+        0%
+            background-position-x: 0% 
+        100%
+            background-position-x: 100%
+
+    h1
+        width: 100%
+        color: #fff
+        font-size: 5rem
+        margin-bottom: 4rem
+        background: variables.$gradient
+        -webkit-background-clip: text
+        -webkit-text-fill-color: transparent
+        
